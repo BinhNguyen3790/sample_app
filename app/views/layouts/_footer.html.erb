@@ -1,0 +1,15 @@
+<footer class="footer">
+  <small>
+    <%= t(".small") %> <a href="#"><%= t(".f_hyperlink") %></a>
+    <%= t(".l_small") %> <a href="#"><%= t(".l_hyperlink") %></a>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), about_path %></li>
+      <li><%= link_to t(".contact"), contact_path %></li>
+      <li><a href="<%= t(".hyperlink")%>"><%= t(".news") %></a></li>
+      <li><%= link_to t(".english"), locale: "en" %></li>
+      <li><%= link_to t(".vietnamese"), locale: "vi" %></li>
+    </ul>
+  </nav>
+</footer>

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title)%> <%= t ".heading" %></title>
+    <title> <%= yield(:title) %><%= t(".heading") %> </title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", media: "all",
       "data-turbolinks-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
+    <%= render "layouts/shim" %>
   </head>
   <body>
-    <%= yield %>
-    <%= link_to t(".english"), locale: "en" %>
-    <%= link_to t(".vietnamese"), locale: "vi" %>
+    <%= render "layouts/header" %>
+    <div class="container">
+      <%= yield %>
+      <%= render "layouts/footer" %>
+    </div>
   </body>
 </html>

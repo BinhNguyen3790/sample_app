@@ -1,7 +1,10 @@
-<% provide(:title, t(".home")) %>
-<h1><%= t ".heading" %></h1>
-<p>
-  <%= t ".paragraph" %>
-  <a href="#"><%= t ".hyperlink" %></a>
-  <%= t ".last_paragraph" %>
-</p>
+<div class="<%= t(".class") %>">
+  <h1><%= t(".heading") %></h1>
+  <h2>
+    <%= t(".paragraph") %>
+    <a href="#"><%= t(".hyperlink") %></a>
+    <%= t(".last_paragraph") %>
+  </h2>
+  <%= link_to t(".link"), signup_path, class: t(".btn") %>
+</div>
+<%= link_to image_tag( "/assets/rails.png", alt: t(".alt")), t(".src") %>
