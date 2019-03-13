@@ -1,0 +1,33 @@
+vi:
+  layouts:
+    application:
+      heading: "| Ruby on Rails Tutorial Sample App"
+      vietnamese: "Tiếng Việt"
+      english: "Tiếng Anh"
+  static_pages:
+    home:
+      home: "Home"
+      heading: "ứng dụng mẫu"
+      paragraph: "Đây là trang chủ cho"
+      hyperlink: "Hướng dẫn Ruby on Rails"
+      last_paragraph: "ứng dụng mẫu."
+    help:
+      help: "Help"
+      heading: "Trợ giúp"
+      paragraph: "Nhận trợ giúp trên Ruby on Rails Tutorial tại"
+      hyperlink: "phần trợ giúp hướng dẫn Rails"
+      last_paragraph: " . Để được trợ giúp về ứng dụng mẫu này, xem"
+      emphasized: "Ruby on Rails Tutorial"
+      last_hyperlink: " sách"
+    about:
+      about: "About"
+      heading: "Giới thiệu"
+      paragraph: "Các"
+      emphasized: "Hướng dẫn Ruby on Rails"
+      hyperlink: "là một"
+      second_hyperlink: "Cuốn sách"
+      second_paragraph: "và"
+      third_hyperlink: "loạt hình màn ảnh"
+      third_paragraph: "để dạy phát triển web với"
+      fourd_hyperlink: "Ruby on Rails"
+      last_hyperlink: "Đây là ứng dụng mẫu để hướng dẫn."
