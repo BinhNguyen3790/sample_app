@@ -1,4 +1,9 @@
 vi:
+  sample_app:
+    application:
+      helpers:
+        application_helper:
+          base_title: "Ruby on Rails Tutorial Sample App"
   layouts:
     application:
       heading: "| Ruby on Rails Tutorial Sample App"
