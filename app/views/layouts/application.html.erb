@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title)%> <%= t ".heading" %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", media: "all",
+      "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <%= link_to t(".english"), locale: "en" %>
+    <%= link_to t(".vietnamese"), locale: "vi" %>
+  </body>
+</html>
