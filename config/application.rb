@@ -12,7 +12,7 @@ module SampleApp
     config.load_defaults 5.2
     config.i18n.load_path += Dir[Rails.root.join("config", "locales", "**", "*.{rb,yml}")]
     config.i18n.available_locales = [:en, :vi]
-    config.i18n.default_locale = :vi
+    config.i18n.default_locale = :en
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

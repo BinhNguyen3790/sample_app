@@ -1,23 +1,46 @@
 en:
-  sample_app:
-    application:
-      helpers:
-        application_helper:
-          base_title: "Ruby on Rails Tutorial Sample App"
   layouts:
     application:
-      heading: "| Ruby on Rails Tutorial Sample App"
+      heading: "Ruby on Rails Tutorial Sample App"
+      shim: "layouts/shim"
+      header: "layouts/header"
+      footer: "layouts/footer"
+    header:
+      id: "header"
+      class: "navbar navbar-fixed-top navbar-inverse"
+      d_class: "container"
+      n_link: "Sample App"
+      id_link: "logo"
+      ul_class: "nav navbar-nav navbar-right"
+      home: "Home"
+      help: "Help"
+      login: "Login"
+    footer:
       vietnamese: "Vietnamese"
       english: "English"
+      hyperlink: "https://rubyonrails.org/"
+      contact: "Contact"
+      about: "About"
+      news: "News"
+      small: "The"
+      l_small: "by"
+      f_hyperlink: "Ruby on Rails Tutorial"
+      l_hyperlink: "Michael Hartl"
   static_pages:
     home:
-      home: "Home"
+      home: "Home | "
       heading: "Sample App"
       paragraph: "This is the home page for the"
       hyperlink: "Ruby on Rails Tutorial"
       last_paragraph: "sample application."
+      class: "center jumbotron"
+      link: "Sign up now!"
+      btn: "btn btn-lg btn-primary"
+      image_link: "/assets/rails.png"
+      alt: "Rails logo"
+      image_src: "http://rubyonrails.org/"
     help:
-      help: "Help"
+      help: "Help | "
       heading: "Help"
       paragraph: "Get help on the Ruby on Rails Tutorial at the"
       hyperlink: "Rails Tutorial help section"
@@ -25,7 +48,7 @@ en:
       emphasized: "Ruby on Rails Tutorial"
       last_hyperlink: "book"
     about:
-      about: "About"
+      about: "About | "
       heading: "About"
       paragraph: "The"
       emphasized: "Ruby on Rails Tutorial"
@@ -36,4 +59,14 @@ en:
       third_paragraph: "to teach web development with"
       fourd_hyperlink: "Ruby on Rails"
       last_hyperlink: "This is the sample application for the tutorial."
-
+    contact:
+      title: "Contact | "
+      contact: "Contact"
+      paragraph: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      hyperlink: "Contact page"
+      emphasized: "Ruby on Rails Tutorial"
+  users:
+    new:
+      title: "Sign up | "
+      signup: "Sign up"
+      paragraph: "This will be a signup page for new users."

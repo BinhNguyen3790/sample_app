@@ -1,0 +1,12 @@
+<header id="<%= t(".id") %>" class="<%= t(".class") %>">
+  <div class="<%= t(".d_class") %>">
+    <%= link_to t(".n_link"), root_path, id: t(".id_link") %>
+    <nav>
+      <ul class="<%= t(".ul_class") %>">
+        <li><%= link_to t(".home"), root_path %></li>
+        <li><%= link_to t(".help"), help_path %></li>
+        <li><%= link_to t(".login"), signup_path %></li>
+      </ul>
+    </nav>
+  </div>
+</header>

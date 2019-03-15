@@ -1,23 +1,47 @@
 vi:
-  sample_app:
-    application:
-      helpers:
-        application_helper:
-          base_title: "Ruby on Rails Tutorial Sample App"
   layouts:
     application:
-      heading: "| Ruby on Rails Tutorial Sample App"
+      heading: "Ruby on Rails Tutorial Sample App"
+      heading: "Hướng Dẫn ứng dụng Ruby on Rails mẫu"
+      shim: "layouts/shim"
+      header: "layouts/header"
+      footer: "layouts/footer"
+    header:
+      id: "header"
+      class: "navbar navbar-fixed-top navbar-inverse"
+      d_class: "container"
+      n_link: "ứng dụng mẫu"
+      id_link: "logo"
+      ul_class: "nav navbar-nav navbar-right"
+      home: "Trang Chủ"
+      help: "Trợ Giúp"
+      login: "Đăng Nhập"
+    footer:
       vietnamese: "Tiếng Việt"
       english: "Tiếng Anh"
+      hyperlink: "https://rubyonrails.org/"
+      contact: "Liên Hệ"
+      about: "Giới Thiệu"
+      news: "Tin Tức"
+      small: "Các"
+      l_small: "Bởi"
+      f_hyperlink: "Hướng Dẫn Ruby on Rails"
+      l_hyperlink: "Michael Hartl"
   static_pages:
     home:
-      home: "Home"
+      home: "Trang Chủ | "
       heading: "ứng dụng mẫu"
       paragraph: "Đây là trang chủ cho"
       hyperlink: "Hướng dẫn Ruby on Rails"
       last_paragraph: "ứng dụng mẫu."
+      class: "center jumbotron"
+      link: "Đăng Ký Ngay!"
+      btn: "btn btn-lg btn-primary"
+      image_link: "/assets/rails.png"
+      alt: "Rails logo"
+      image_src: "http://rubyonrails.org/"
     help:
-      help: "Help"
+      help: "Trợ giúp | "
       heading: "Trợ giúp"
       paragraph: "Nhận trợ giúp trên Ruby on Rails Tutorial tại"
       hyperlink: "phần trợ giúp hướng dẫn Rails"
@@ -25,7 +49,7 @@ vi:
       emphasized: "Ruby on Rails Tutorial"
       last_hyperlink: " sách"
     about:
-      about: "About"
+      about: "Giới thiệu | "
       heading: "Giới thiệu"
       paragraph: "Các"
       emphasized: "Hướng dẫn Ruby on Rails"
@@ -36,3 +60,14 @@ vi:
       third_paragraph: "để dạy phát triển web với"
       fourd_hyperlink: "Ruby on Rails"
       last_hyperlink: "Đây là ứng dụng mẫu để hướng dẫn."
+    contact:
+      title: "Liên Hệ | "
+      contact: "Liên Hệ"
+      paragraph: "Liên Hệ những ứng dụng mấu Ruby on Rails tại"
+      hyperlink: "Liên Hệ trang"
+      emphasized: "Hướng Dẫn Ruby on Rails"
+  users:
+    new:
+      title: "Đăng Ký | "
+      signup: "Đăng Ký"
+      paragraph: "Đây là trang đăng ký cho người dùng mới."
