@@ -1,10 +1,20 @@
 en:
+  helpers:
+    label:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        pasword_confirmation: "Confirmation"
+  controllers:
+    users:
+      welcomes: "Welcome to the Sample App!"
+      messenger: "Your account not found"
   layouts:
     application:
-      heading: "Ruby on Rails Tutorial Sample App"
-      shim: "layouts/shim"
-      header: "layouts/header"
-      footer: "layouts/footer"
+      heading: " | Ruby on Rails Tutorial Sample App"
+      class: "container"
+      alert: "alert alert-"
     header:
       id: "header"
       class: "navbar navbar-fixed-top navbar-inverse"
@@ -28,7 +38,7 @@ en:
       l_hyperlink: "Michael Hartl"
   static_pages:
     home:
-      home: "Home | "
+      home: "Home"
       heading: "Sample App"
       paragraph: "This is the home page for the"
       hyperlink: "Ruby on Rails Tutorial"
@@ -40,7 +50,7 @@ en:
       alt: "Rails logo"
       image_src: "http://rubyonrails.org/"
     help:
-      help: "Help | "
+      help: "Help"
       heading: "Help"
       paragraph: "Get help on the Ruby on Rails Tutorial at the"
       hyperlink: "Rails Tutorial help section"
@@ -48,7 +58,7 @@ en:
       emphasized: "Ruby on Rails Tutorial"
       last_hyperlink: "book"
     about:
-      about: "About | "
+      about: "About"
       heading: "About"
       paragraph: "The"
       emphasized: "Ruby on Rails Tutorial"
@@ -60,13 +70,26 @@ en:
       fourd_hyperlink: "Ruby on Rails"
       last_hyperlink: "This is the sample application for the tutorial."
     contact:
-      title: "Contact | "
+      title: "Contact"
       contact: "Contact"
       paragraph: "Contact the Ruby on Rails Tutorial about the sample app at the"
       hyperlink: "Contact page"
       emphasized: "Ruby on Rails Tutorial"
   users:
     new:
-      title: "Sign up | "
+      title: "Sign up"
       signup: "Sign up"
-      paragraph: "This will be a signup page for new users."
+      row: "row"
+      col: "col-md-6 col-md-offset-3"
+      title: "Create my account"
+      confirm: "Confirmation"
+    show:
+      row: "row"
+      col: "col-md-4"
+      info: "user_info"
+  shared:
+    error_messages:
+      id: "error_explanation"
+      class: "alert  alert-danger"
+      text: "The form contains"
+      error: "error"
