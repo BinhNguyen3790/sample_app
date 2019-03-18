@@ -5,7 +5,25 @@
       <ul class="<%= t(".ul_class") %>">
         <li><%= link_to t(".home"), root_path %></li>
         <li><%= link_to t(".help"), help_path %></li>
-        <li><%= link_to t(".login"), signup_path %></li>
+        <% if logged_in? %>
+          <li><%= link_to t(".user"), "#" %></li>
+          <li class=<%= t(".drop") %>>
+            <a href="#" class="<%= t(".drop") %><%= t(".toggle") %>"
+              data-toggle="<%= t(".drop") %>">
+              <%= t("account") %> <b class="<%= t(".caret") %>"></b>
+            </a>
+            <ul class="<%= t(".drop") %><%= t(".menu") %>">
+              <li><%= link_to t(".profile"), current_user %></li>
+              <li><%= link_to t(".Settings"), "#" %></li>
+              <li class="<%= t(".divider") %>"></li>
+              <li>
+                <%= link_to t(".logout"), logout_path, method: :delete %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to t(".login"), login_path %></li>
+        <% end %>
       </ul>
     </nav>
   </div>

@@ -7,6 +7,7 @@ gem "config"
 gem "figaro"
 gem "guard", "~> 2.15.0"
 gem "guard-minitest"
+gem "jquery-rails"
 gem "rails-i18n"
 gem "rubocop", "~> 0.54.0", require: false
 

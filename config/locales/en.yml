@@ -10,6 +10,8 @@ en:
     users:
       welcomes: "Welcome to the Sample App!"
       messenger: "Your account not found"
+    sessions:
+      messenger: "Invalid email/password combination"
   layouts:
     application:
       heading: " | Ruby on Rails Tutorial Sample App"
@@ -25,6 +27,16 @@ en:
       home: "Home"
       help: "Help"
       login: "Login"
+      user: "Users"
+      drop: "dropdown"
+      toggle: "-toggle"
+      menu: "-menu"
+      account: "Account"
+      caret: "caret"
+      profile: "Profile"
+      settings: "Settings"
+      divider: "divider"
+      logout: "Log out"
     footer:
       vietnamese: "Vietnamese"
       english: "English"
@@ -45,10 +57,7 @@ en:
       last_paragraph: "sample application."
       class: "center jumbotron"
       link: "Sign up now!"
-      btn: "btn btn-lg btn-primary"
       image_link: "/assets/rails.png"
-      alt: "Rails logo"
-      image_src: "http://rubyonrails.org/"
     help:
       help: "Help"
       heading: "Help"
@@ -93,3 +102,10 @@ en:
       class: "alert  alert-danger"
       text: "The form contains"
       error: "error"
+  sessions:
+    new:
+      login: "Log in"
+      row: "row"
+      col: "col-md-6 col-md-offset-3"
+      paragraph: "New user?"
+      sign: "Sign up now!"
