@@ -1,0 +1,6 @@
+app:
+  models:
+    user:
+      name: 50
+      email: 255
+      pass: 6
