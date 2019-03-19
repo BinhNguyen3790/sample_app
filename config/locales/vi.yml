@@ -1,11 +1,20 @@
 vi:
+  helpers:
+    label:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        pasword_confirmation: "Xác Nhận mật khẩu"
+  controllers:
+    users:
+      welcomes: "Chào mừng đến với ứng dụng mẫu!"
+      messenger: "Tài khoản của bạn không được tìm thấy"
   layouts:
     application:
-      heading: "Ruby on Rails Tutorial Sample App"
-      heading: "Hướng Dẫn ứng dụng Ruby on Rails mẫu"
-      shim: "layouts/shim"
-      header: "layouts/header"
-      footer: "layouts/footer"
+      heading: " | Hướng Dẫn ứng dụng Ruby on Rails mẫu"
+      class: "container"
+      alert: "alert alert-"
     header:
       id: "header"
       class: "navbar navbar-fixed-top navbar-inverse"
@@ -29,7 +38,7 @@ vi:
       l_hyperlink: "Michael Hartl"
   static_pages:
     home:
-      home: "Trang Chủ | "
+      home: "Trang Chủ"
       heading: "ứng dụng mẫu"
       paragraph: "Đây là trang chủ cho"
       hyperlink: "Hướng dẫn Ruby on Rails"
@@ -41,7 +50,7 @@ vi:
       alt: "Rails logo"
       image_src: "http://rubyonrails.org/"
     help:
-      help: "Trợ giúp | "
+      help: "Trợ giúp"
       heading: "Trợ giúp"
       paragraph: "Nhận trợ giúp trên Ruby on Rails Tutorial tại"
       hyperlink: "phần trợ giúp hướng dẫn Rails"
@@ -49,7 +58,7 @@ vi:
       emphasized: "Ruby on Rails Tutorial"
       last_hyperlink: " sách"
     about:
-      about: "Giới thiệu | "
+      about: "Giới thiệu"
       heading: "Giới thiệu"
       paragraph: "Các"
       emphasized: "Hướng dẫn Ruby on Rails"
@@ -61,13 +70,26 @@ vi:
       fourd_hyperlink: "Ruby on Rails"
       last_hyperlink: "Đây là ứng dụng mẫu để hướng dẫn."
     contact:
-      title: "Liên Hệ | "
+      title: "Liên Hệ"
       contact: "Liên Hệ"
       paragraph: "Liên Hệ những ứng dụng mấu Ruby on Rails tại"
       hyperlink: "Liên Hệ trang"
       emphasized: "Hướng Dẫn Ruby on Rails"
   users:
     new:
-      title: "Đăng Ký | "
+      title: "Đăng Ký"
       signup: "Đăng Ký"
-      paragraph: "Đây là trang đăng ký cho người dùng mới."
+      row: "row"
+      col: "col-md-6 col-md-offset-3"
+      title: "Create my account"
+      confirm: "Confirmation"
+    show:
+      row: "row"
+      col: "col-md-4"
+      info: "user_info"
+  shared:
+    error_messages:
+      id: "error_explanation"
+      class: "alert  alert-danger"
+      text: "The form contains"
+      error: "error"

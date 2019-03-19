@@ -22,6 +22,12 @@ test:
   <<: *default
   database: <%= Figaro.env.database_name %>
 
+# production:
+#   <<: *default
+#   database: <%= Figaro.env.database_name %>
+
 production:
   <<: *default
-  database: <%= Figaro.env.database_name %>
+  database: sample_app_production
+  username: sample_app
+  password: <%= ENV['SAMPLE_APP_DATABASE_PASSWORD'] %>
