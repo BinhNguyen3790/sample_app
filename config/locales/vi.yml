@@ -25,6 +25,16 @@ vi:
       home: "Trang Chủ"
       help: "Trợ Giúp"
       login: "Đăng Nhập"
+      user: "Users"
+      drop: "dropdown"
+      toggle: "-toggle"
+      menu: "-menu"
+      account: "Account"
+      caret: "caret"
+      profile: "Profile"
+      settings: "Settings"
+      divider: "divider"
+      logout: "Log out"
     footer:
       vietnamese: "Tiếng Việt"
       english: "Tiếng Anh"
@@ -45,10 +55,7 @@ vi:
       last_paragraph: "ứng dụng mẫu."
       class: "center jumbotron"
       link: "Đăng Ký Ngay!"
-      btn: "btn btn-lg btn-primary"
       image_link: "/assets/rails.png"
-      alt: "Rails logo"
-      image_src: "http://rubyonrails.org/"
     help:
       help: "Trợ giúp"
       heading: "Trợ giúp"
@@ -93,3 +100,10 @@ vi:
       class: "alert  alert-danger"
       text: "The form contains"
       error: "error"
+  sessions:
+    new:
+      login: "Log in"
+      row: "row"
+      col: "col-md-6 col-md-offset-3"
+      paragraph: "New user?"
+      sign: "Sign up now!"

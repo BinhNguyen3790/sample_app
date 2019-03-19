@@ -6,6 +6,7 @@
     <a href="#"><%= t(".hyperlink") %></a>
     <%= t(".last_paragraph") %>
   </h2>
-  <%= link_to t(".link"), signup_path, class: t(".btn") %>
+  <%= link_to t(".link"), signup_path, class: "btn btn-lg btn-primary" %>
 </div>
-<%= link_to image_tag( "/assets/rails.png", alt: t(".alt")), t(".src") %>
+<%= link_to image_tag( "/assets/rails.png", alt: "Rails logo"),
+  "http://rubyonrails.org/" %>
