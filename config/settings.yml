@@ -4,3 +4,6 @@ app:
       name: 50
       email: 255
       pass: 6
+sessions:
+  number: "1"
+  not_found: "not found user"
