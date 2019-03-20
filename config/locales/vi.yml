@@ -5,11 +5,18 @@ vi:
         name: "Tên"
         email: "Email"
         password: "Mật khẩu"
-        pasword_confirmation: "Xác Nhận mật khẩu"
+        password_confirmation: "Xác Nhận mật khẩu"
   controllers:
     users:
       welcomes: "Chào mừng đến với ứng dụng mẫu!"
       messenger: "Tài khoản của bạn không được tìm thấy"
+      login: "Hãy đăng nhập"
+      s_delete: "Người dùng đã được xóa"
+      f_delete: "Thử lại"
+      update: "Thông tin đã được cập nhật"
+      user: "Không tìm thấy người dùng"
+    sessions:
+      messenger: "email hoặc password không hợp lệ"
   layouts:
     application:
       heading: " | Hướng Dẫn ứng dụng Ruby on Rails mẫu"
@@ -83,17 +90,34 @@ vi:
       hyperlink: "Liên Hệ trang"
       emphasized: "Hướng Dẫn Ruby on Rails"
   users:
+    user:
+      delete: "delete"
+      text: "Bạn có chắc không?"
     new:
       title: "Đăng Ký"
       signup: "Đăng Ký"
       row: "row"
       col: "col-md-6 col-md-offset-3"
-      title: "Create my account"
-      confirm: "Confirmation"
+      create: "Tạo tài khoản"
+      form: "form"
     show:
       row: "row"
       col: "col-md-4"
       info: "user_info"
+    edit:
+      edit: "Chỉnh sửa người dùng"
+      save: "Lưu thay đổi"
+      update: "Cập nhật thông tin"
+      row: "row"
+      col: "col-md-6 col-md-offset-3"
+      form: "form"
+      gravatar: "gravatar_edit"
+      hyperlink: "http://gravatar.com/emails"
+      blank: "_blank"
+      change: "thay đổi"
+    index:
+      all: "Tất cả người dùng"
+      class: "users"
   shared:
     error_messages:
       id: "error_explanation"

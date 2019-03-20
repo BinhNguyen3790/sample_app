@@ -1,9 +1,18 @@
 app:
+  helpers:
+    user:
+      size: 80
   models:
     user:
       name: 50
       email: 255
       pass: 6
+  views:
+    users:
+      user:
+        size: 50
 sessions:
   number: "1"
   not_found: "not found user"
+per_page:
+  user: 20

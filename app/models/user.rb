@@ -2,14 +2,14 @@ class User < ApplicationRecord
   attr_accessor :remember_token
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   before_save{email.downcase!}
-  has_secure_password
   validates :email, presence: true,
     length: {maximum: Settings.app.models.user.email},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
   validates :name, presence: true,
     length: {maximum: Settings.app.models.user.name}
+  has_secure_password
   validates :password, presence: true,
-    length: {minimum: Settings.app.models.user.pass}
+    length: {minimum: Settings.app.models.user.pass}, allow_nil: true
 
   # Returns the hash digest of the given string.
   def self.digest string

@@ -1,0 +1,13 @@
+<% provide(:title, t(".edit")) %>
+<% provide(:button_text, t(".save")) %>
+<h1><%= t(".update") %></h1>
+
+<div class="<%= t(".row") %>">
+  <div class="<%= t(".col")%>">
+    <%= render t(".form")%>
+    <div class="<%= t(".gravatar") %>">
+      <%= gravatar_for @user %>
+      <a href="<%= t(".hyperlink") %>" target="<%= t(".blank") %>"><%= t(".change") %></a>
+    </div>
+  </div>
+</div>
