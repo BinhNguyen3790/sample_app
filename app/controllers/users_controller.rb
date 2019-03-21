@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by id: params[:id]
     return if @user
-    flash[:danger] = I18n.t "controllers.users.messenger"
+    flash[:danger] = t "controllers.users.messenger"
     redirect_to root_path
   end
 
@@ -16,7 +16,7 @@ class UsersController < ApplicationController
       log_in @user
 
       # Handle a successful save.
-      flash[:success] = I18n.t "controllers.users.welcomes"
+      flash[:success] = t "controllers.users.welcomes"
       redirect_to @user
     else
       render :new
