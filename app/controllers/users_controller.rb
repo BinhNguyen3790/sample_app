@@ -1,18 +1,16 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, except: [:show, :new, :create]
-  before_action :load_user, except:[:index, :new, :create]
+  before_action :load_user, except: [:index, :new, :create]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.paginate page: params[:page],
+    @users = User.activated.paginate page: params[:page],
       per_page: Settings.per_page.user
   end
 
   def show
-    return if @user
-    flash[:danger] = t "controllers.users.messenger"
-    redirect_to root_path
+    redirect_to root_path unless @user.activated?
   end
 
   def new
@@ -22,11 +20,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-
-      # Handle a successful save.
-      flash[:success] = t "controllers.users.welcomes"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "controllers.users.check_email"
+      redirect_to root_path
     else
       render :new
     end
@@ -78,7 +74,7 @@ class UsersController < ApplicationController
   end
 
   def load_user
-    @user =User.find_by id: params[:id]
+    @user = User.find_by id: params[:id]
     return if @user
     flash[:danger] = t "controllers.users.user"
     redirect_to root_path

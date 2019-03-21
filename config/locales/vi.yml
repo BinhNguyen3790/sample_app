@@ -15,8 +15,18 @@ vi:
       f_delete: "Thử lại"
       update: "Thông tin đã được cập nhật"
       user: "Không tìm thấy người dùng"
+      check_email: "Please check your email to activate your account."
     sessions:
       messenger: "email hoặc password không hợp lệ"
+      not_active: "Account not activated."
+    account_activations:
+      active: "Account activated!"
+      invalid: "Invalid activation link"
+      check_email: "email not found"
+  mailers:
+    user:
+      subject: "Account activation"
+      greeting: "Hi"
   layouts:
     application:
       heading: " | Hướng Dẫn ứng dụng Ruby on Rails mẫu"
@@ -132,3 +142,9 @@ vi:
       paragraph: "New user?"
       sign: "Sign up now!"
       remember: "Remember me on this computer"
+  user_mailer:
+    account_activation:
+      heading: "Sample App"
+      hi: "Hi"
+      paragraph: "Welcome to the Sample App! Click on the link below to activate your account:"
+      active: "Activate"

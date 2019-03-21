@@ -15,8 +15,18 @@ en:
       f_delete: "Try again"
       update: "Profile updated"
       user: "user not found"
+      check_email: "Please check your email to activate your account."
     sessions:
       messenger: "Invalid email/password combination"
+      not_active: "Account not activated."
+    account_activations:
+      active: "Account activated!"
+      invalid: "Invalid activation link"
+      check_email: "email not found"
+  mailers:
+    user:
+      subject: "Account activation"
+      greeting: "Hi"
   layouts:
     application:
       heading: " | Ruby on Rails Tutorial Sample App"
@@ -132,3 +142,9 @@ en:
       paragraph: "New user?"
       sign: "Sign up now!"
       remember: "Remember me on this computer"
+  user_mailer:
+    account_activation:
+      heading: "Sample App"
+      hi: "Hi"
+      paragraph: "Welcome to the Sample App! Click on the link below to activate your account:"
+      active: "Activate"

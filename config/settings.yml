@@ -7,12 +7,16 @@ app:
       name: 50
       email: 255
       pass: 6
-  views:
-    users:
-      user:
-        size: 50
+users:
+  user:
+    size: 50
 sessions:
   number: "1"
   not_found: "not found user"
 per_page:
   user: 20
+production:
+  host: "<your heroku app>.herokuapp.com"
+  address: "smtp.sendgrid.net"
+  port: "587"
+  domain: "heroku.com"
