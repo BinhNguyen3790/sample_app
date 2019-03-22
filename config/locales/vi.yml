@@ -7,6 +7,9 @@ vi:
         password: "Mật khẩu"
         password_confirmation: "Xác Nhận mật khẩu"
   controllers:
+    password_resets:
+      send: "Email sent with password reset instructions"
+      error: "Email address not found"
     users:
       welcomes: "Chào mừng đến với ứng dụng mẫu!"
       messenger: "Tài khoản của bạn không được tìm thấy"
@@ -27,6 +30,7 @@ vi:
     user:
       subject: "Account activation"
       greeting: "Hi"
+      password: "Password reset"
   layouts:
     application:
       heading: " | Hướng Dẫn ứng dụng Ruby on Rails mẫu"
@@ -110,6 +114,8 @@ vi:
       col: "col-md-6 col-md-offset-3"
       create: "Tạo tài khoản"
       form: "form"
+      new: "New user?"
+      signow: "Sign up now!"
     show:
       row: "row"
       col: "col-md-4"
@@ -148,3 +154,14 @@ vi:
       hi: "Hi"
       paragraph: "Welcome to the Sample App! Click on the link below to activate your account:"
       active: "Activate"
+  password_resets:
+    new:
+      forget: "Quên Mật Khẩu"
+      row: "row"
+      col: "col-md-6 col-md-offset-3"
+      submit: "Gửi"
+    edit:
+      reset: "Reset password"
+      row: "row"
+      col: "col-md-6 col-md-offset-3"
+      update: "Update password"

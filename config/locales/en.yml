@@ -7,6 +7,12 @@ en:
         password: "Password"
         password_confirmation: "Password Confirmation"
   controllers:
+    password_resets:
+      send: "Email sent with password reset instructions"
+      error: "Email address not found"
+      success: "Password has been reset."
+      expired: "Password reset has expired."
+      empty: "can't be empty"
     users:
       welcomes: "Welcome to the Sample App!"
       messenger: "Your account not found"
@@ -27,6 +33,7 @@ en:
     user:
       subject: "Account activation"
       greeting: "Hi"
+      password: "Password reset"
   layouts:
     application:
       heading: " | Ruby on Rails Tutorial Sample App"
@@ -110,6 +117,8 @@ en:
       col: "col-md-6 col-md-offset-3"
       create: "Create my account"
       form: "form"
+      new: "New user?"
+      signow: "Sign up now!"
     show:
       row: "row"
       col: "col-md-4"
@@ -146,5 +155,24 @@ en:
     account_activation:
       heading: "Sample App"
       hi: "Hi"
-      paragraph: "Welcome to the Sample App! Click on the link below to activate your account:"
+      paragraph: "Welcome to the Sample App! Click on the link below to activate
+your account:"
       active: "Activate"
+    password_reset:
+      heading: "Password reset"
+
+      to_reset: "To reset your password click the link below:"
+      exprie: "This link will expire in two hours."
+      reset: "If you did not request your password to be reset, please ignore
+this email and your password will stay as it is."
+  password_resets:
+    new:
+      forget: "Forgot password"
+      row: "row"
+      col: "col-md-6 col-md-offset-3"
+      submit: "Submit"
+    edit:
+      reset: "Reset password"
+      row: "row"
+      col: "col-md-6 col-md-offset-3"
+      update: "Update password"
