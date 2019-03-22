@@ -8,15 +8,19 @@ gem "figaro"
 gem "guard", "~> 2.15.0"
 gem "guard-minitest"
 gem "jquery-rails"
+gem "kaminari"
 gem "rails-i18n"
 gem "rubocop", "~> 0.54.0", require: false
 
 gem "bcrypt", "3.1.12"
+gem "bootstrap-will_paginate", "1.0.0"
+gem "faker"
 gem "mysql2"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.2"
 gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
+gem "will_paginate", "3.1.6"
 
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-sass", "3.3.7"

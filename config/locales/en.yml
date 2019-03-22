@@ -5,11 +5,16 @@ en:
         name: "Name"
         email: "Email"
         password: "Password"
-        pasword_confirmation: "Confirmation"
+        password_confirmation: "Password Confirmation"
   controllers:
     users:
       welcomes: "Welcome to the Sample App!"
       messenger: "Your account not found"
+      login: "Please login"
+      s_delete: "User deleted"
+      f_delete: "Try again"
+      update: "Profile updated"
+      user: "user not found"
     sessions:
       messenger: "Invalid email/password combination"
   layouts:
@@ -85,17 +90,34 @@ en:
       hyperlink: "Contact page"
       emphasized: "Ruby on Rails Tutorial"
   users:
+    user:
+      delete: "delete"
+      text: "You sure?"
     new:
       title: "Sign up"
       signup: "Sign up"
       row: "row"
       col: "col-md-6 col-md-offset-3"
-      title: "Create my account"
-      confirm: "Confirmation"
+      create: "Create my account"
+      form: "form"
     show:
       row: "row"
       col: "col-md-4"
       info: "user_info"
+    edit:
+      edit: "Edit user"
+      save: "Save changes"
+      update: "Update your profile"
+      row: "row"
+      col: "col-md-6 col-md-offset-3"
+      form: "form"
+      gravatar: "gravatar_edit"
+      hyperlink: "http://gravatar.com/emails"
+      blank: "_blank"
+      change: "change"
+    index:
+      all: "All users"
+      class: "users"
   shared:
     error_messages:
       id: "error_explanation"
