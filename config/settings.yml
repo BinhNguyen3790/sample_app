@@ -25,3 +25,5 @@ micropost:
   size: 50
   maximum: 140
   picture_size: 5
+avatar:
+  size: 30

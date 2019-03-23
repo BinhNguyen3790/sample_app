@@ -10,6 +10,7 @@ vi:
     microposts:
       create: "Micropost created!"
       delete: "Micropost deleted"
+      failed: "Try again"
     application:
       please: "Please log in."
     password_resets:
@@ -27,6 +28,8 @@ vi:
       update: "Thông tin đã được cập nhật"
       user: "Không tìm thấy người dùng"
       check_email: "Please check your email to activate your account."
+      following: "Following"
+      followed: "Followers"
     sessions:
       messenger: "email hoặc password không hợp lệ"
       not_active: "Account not activated."
@@ -99,6 +102,7 @@ vi:
       m_form: "micropost_form"
       col_8: "col-md-8"
       logo: "Rails logo"
+      stats: "stats"
     help:
       help: "Trợ giúp"
       heading: "Trợ giúp"
@@ -126,6 +130,21 @@ vi:
       hyperlink: "Liên Hệ trang"
       emphasized: "Hướng Dẫn Ruby on Rails"
   users:
+    show_follow:
+      row: "row"
+      col_4: "col-md-4"
+      info: "user_info"
+      view: "view my profile"
+      stats: "stats"
+      avatar: "user_avatars"
+      col_8: "col-md-8"
+      follow: "users follow"
+    unfollow:
+      u_follow: "Unfollow"
+    follow_form:
+      f_form: "follow_form"
+    follow:
+      follow: "Follow"
     user:
       delete: "delete"
       text: "Bạn có chắc không?"
@@ -145,6 +164,12 @@ vi:
       col_8: "col-md-8"
       headding: "Microposts"
       class: "microposts"
+      stats: "stats"
+    stats:
+      stats: "stats"
+      stat: "stat"
+      following: "following"
+      followers: "followers"
     edit:
       edit: "Chỉnh sửa người dùng"
       save: "Lưu thay đổi"
@@ -160,6 +185,11 @@ vi:
       all: "Tất cả người dùng"
       class: "users"
   shared:
+    stats:
+      stats: "stats"
+      stat: "stat"
+      following: "following"
+      followers: "followers"
     error_messages:
       id: "error_explanation"
       class: "alert  alert-danger"
@@ -167,7 +197,7 @@ vi:
       error: "error"
     feed:
       class: "microposts"
-    micropost:
+    micropost_form:
       field: "field"
       placeholder: "Compose new micropost..."
       post: "Post"
@@ -192,7 +222,6 @@ your account:"
       active: "Activate"
     password_reset:
       heading: "Password reset"
-
       to_reset: "To reset your password click the link below:"
       exprie: "This link will expire in two hours."
       reset: "If you did not request your password to be reset, please ignore
@@ -208,3 +237,5 @@ this email and your password will stay as it is."
       row: "row"
       col: "col-md-6 col-md-offset-3"
       update: "Update password"
+  micropost:
+    messages: "should be less than 5MB"

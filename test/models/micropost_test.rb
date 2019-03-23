@@ -2,12 +2,13 @@ require "test_helper"
 
 class MicropostTest < ActiveSupport::TestCase
   def setup
-    @user = users :michael
-    @micropost = @user.microposts.build(content: "Lorem ipsum")
+    @user = users(:michael)
+    # This code is not idiomatically correct.
+    @micropost = Micropost.new(content: "Lorem ipsum", user_id: @user.id)
   end
 
-  test "should be vaild" do
-    assert @micropost.valid?
+  test "should be valid" do
+    assert_not @micropost.valid?
   end
 
   test "user id should be present" do
@@ -20,8 +21,8 @@ class MicropostTest < ActiveSupport::TestCase
     assert_not @micropost.valid?
   end
 
-  test "content should be at most 140 character" do
-    @micropost.content = "a" * 140
+  test "content should be at most 140 characters" do
+    @micropost.content = "a" * 141
     assert_not @micropost.valid?
   end
 
