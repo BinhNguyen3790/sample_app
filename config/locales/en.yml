@@ -7,6 +7,12 @@ en:
         password: "Password"
         password_confirmation: "Password Confirmation"
   controllers:
+    microposts:
+      create: "Micropost created!"
+      delete: "Micropost deleted"
+      failed: "Try again"
+    application:
+      please: "Please log in."
     password_resets:
       send: "Email sent with password reset instructions"
       error: "Email address not found"
@@ -70,6 +76,14 @@ en:
       l_small: "by"
       f_hyperlink: "Ruby on Rails Tutorial"
       l_hyperlink: "Michael Hartl"
+  microposts:
+    micropost:
+      mic_id: "micropost-"
+      user: "user"
+      content: "content"
+      tstamp: "timestamp"
+      delete: "delete"
+      confirm: "You sure?"
   static_pages:
     home:
       home: "Home"
@@ -80,6 +94,12 @@ en:
       class: "center jumbotron"
       link: "Sign up now!"
       image_link: "/assets/rails.png"
+      row: "row"
+      col: "col-md-4"
+      info: "user_info"
+      m_form: "micropost_form"
+      col_8: "col-md-8"
+      logo: "Rails logo"
     help:
       help: "Help"
       heading: "Help"
@@ -123,6 +143,9 @@ en:
       row: "row"
       col: "col-md-4"
       info: "user_info"
+      col_8: "col-md-8"
+      headding: "Microposts"
+      class: "microposts"
     edit:
       edit: "Edit user"
       save: "Save changes"
@@ -143,6 +166,16 @@ en:
       class: "alert  alert-danger"
       text: "The form contains"
       error: "error"
+    feed:
+      class: "microposts"
+    micropost:
+      field: "field"
+      placeholder: "Compose new micropost..."
+      post: "Post"
+      picture: "picture"
+    user_info:
+      view: "view my profile"
+      post: "micropost"
   sessions:
     new:
       login: "Log in"
@@ -176,3 +209,5 @@ this email and your password will stay as it is."
       row: "row"
       col: "col-md-6 col-md-offset-3"
       update: "Update password"
+  micropost:
+    messages: "should be less than 5MB"

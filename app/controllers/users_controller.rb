@@ -11,6 +11,7 @@ class UsersController < ApplicationController
 
   def show
     redirect_to root_path unless @user.activated?
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
 
   def new
@@ -49,7 +50,6 @@ class UsersController < ApplicationController
   end
 
   private
-
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation

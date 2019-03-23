@@ -3,12 +3,15 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.5.1"
 
+gem "carrierwave", "1.1.0"
 gem "config"
 gem "figaro"
 gem "guard", "~> 2.15.0"
 gem "guard-minitest"
+gem "i18n-js"
 gem "jquery-rails"
 gem "kaminari"
+gem "mini_magick", "4.7.0"
 gem "rails-i18n"
 gem "rubocop", "~> 0.54.0", require: false
 
@@ -47,6 +50,11 @@ group :test do
   gem "pry"
   gem "rb-readline"
   gem "selenium-webdriver"
+end
+
+group :production do
+  gem "fog", "1.40.0"
+  gem "pg", "0.20.0"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
