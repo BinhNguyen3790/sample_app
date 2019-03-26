@@ -4,5 +4,5 @@
 
 <p><%= t(".user_mailer.account_activation.paragraph") %></p>
 
-<!-- link_to t(".user_mailer.account_activation.active"),
-  edit_account_activation_url(@user.activation_token, email: @user.email) -->
+<%= link_to t(".user_mailer.account_activation.active"),
+  edit_account_activation_url(@user.activation_token, email: @user.email) %>

@@ -7,11 +7,12 @@ app:
       name: 50
       email: 255
       pass: 6
+      time: 2
 users:
   user:
     size: 50
+number: "1"
 sessions:
-  number: "1"
   not_found: "not found user"
 per_page:
   user: 20

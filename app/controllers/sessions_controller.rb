@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if @user&.authenticate(params[:session][:password])
       if @user.activated?
         log_in @user
-        if params[:session][:remember_me] == Settings.sessions.number
+        if params[:session][:remember_me] == Settings.number
           remember @user
         else
           forget @user
