@@ -7,9 +7,17 @@ vi:
         password: "Mật khẩu"
         password_confirmation: "Xác Nhận mật khẩu"
   controllers:
+    microposts:
+      create: "Micropost created!"
+      delete: "Micropost deleted"
+    application:
+      please: "Please log in."
     password_resets:
       send: "Email sent with password reset instructions"
       error: "Email address not found"
+      success: "Password has been reset."
+      expired: "Password reset has expired."
+      empty: "can't be empty"
     users:
       welcomes: "Chào mừng đến với ứng dụng mẫu!"
       messenger: "Tài khoản của bạn không được tìm thấy"
@@ -67,6 +75,14 @@ vi:
       l_small: "Bởi"
       f_hyperlink: "Hướng Dẫn Ruby on Rails"
       l_hyperlink: "Michael Hartl"
+  microposts:
+    micropost:
+      mic_id: "micropost-"
+      user: "user"
+      content: "content"
+      tstamp: "timestamp"
+      delete: "delete"
+      confirm: "You sure?"
   static_pages:
     home:
       home: "Trang Chủ"
@@ -77,6 +93,12 @@ vi:
       class: "center jumbotron"
       link: "Đăng Ký Ngay!"
       image_link: "/assets/rails.png"
+      row: "row"
+      col: "col-md-4"
+      info: "user_info"
+      m_form: "micropost_form"
+      col_8: "col-md-8"
+      logo: "Rails logo"
     help:
       help: "Trợ giúp"
       heading: "Trợ giúp"
@@ -120,6 +142,9 @@ vi:
       row: "row"
       col: "col-md-4"
       info: "user_info"
+      col_8: "col-md-8"
+      headding: "Microposts"
+      class: "microposts"
     edit:
       edit: "Chỉnh sửa người dùng"
       save: "Lưu thay đổi"
@@ -140,6 +165,16 @@ vi:
       class: "alert  alert-danger"
       text: "The form contains"
       error: "error"
+    feed:
+      class: "microposts"
+    micropost:
+      field: "field"
+      placeholder: "Compose new micropost..."
+      post: "Post"
+      picture: "picture"
+    user_info:
+      view: "view my profile"
+      post: "micropost"
   sessions:
     new:
       login: "Log in"
@@ -152,8 +187,16 @@ vi:
     account_activation:
       heading: "Sample App"
       hi: "Hi"
-      paragraph: "Welcome to the Sample App! Click on the link below to activate your account:"
+      paragraph: "Welcome to the Sample App! Click on the link below to activate
+your account:"
       active: "Activate"
+    password_reset:
+      heading: "Password reset"
+
+      to_reset: "To reset your password click the link below:"
+      exprie: "This link will expire in two hours."
+      reset: "If you did not request your password to be reset, please ignore
+this email and your password will stay as it is."
   password_resets:
     new:
       forget: "Quên Mật Khẩu"

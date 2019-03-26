@@ -1,12 +1,29 @@
 <% provide(:title, t(".home")) %>
-<div class="<%= t(".class") %>">
-  <h1><%= t(".heading") %></h1>
-  <h2>
-    <%= t(".paragraph") %>
-    <a href="#"><%= t(".hyperlink") %></a>
-    <%= t(".last_paragraph") %>
-  </h2>
-  <%= link_to t(".link"), signup_path, class: "btn btn-lg btn-primary" %>
-</div>
-<%= link_to image_tag( "/assets/rails.png", alt: "Rails logo"),
-  "http://rubyonrails.org/" %>
+<% if logged_in? %>
+  <div class="<%= t(".row") %>">
+    <aside class="<%= t(".col") %>">
+      <section class="<%= t(".info") %>">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="<%= t(".m_form") %>">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="<%= t(".col_8") %>">
+      <h3>Micropost Feed</h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <div class="<%= t(".class") %>">
+    <h1><%= t(".heading") %></h1>
+    <h2>
+      <%= t(".paragraph") %>
+      <a href="#"><%= t(".hyperlink") %></a>
+      <%= t(".last_paragraph") %>
+    </h2>
+    <%= link_to t(".link"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  <%= link_to image_tag( "/assets/rails.png", alt: "Rails logo"),
+    "http://rubyonrails.org/" %>
+<% end %>
