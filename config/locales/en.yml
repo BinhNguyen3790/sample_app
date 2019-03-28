@@ -7,6 +7,8 @@ en:
         password: "Password"
         password_confirmation: "Password Confirmation"
   controllers:
+    relationships:
+      not_found: "not found"
     microposts:
       create: "Micropost created!"
       delete: "Micropost deleted"
@@ -28,6 +30,9 @@ en:
       update: "Profile updated"
       user: "user not found"
       check_email: "Please check your email to activate your account."
+      following: "Following"
+      followed: "Followers"
+      follow: "not found"
     sessions:
       messenger: "Invalid email/password combination"
       not_active: "Account not activated."
@@ -100,6 +105,7 @@ en:
       m_form: "micropost_form"
       col_8: "col-md-8"
       logo: "Rails logo"
+      stats: "stats"
     help:
       help: "Help"
       heading: "Help"
@@ -127,6 +133,21 @@ en:
       hyperlink: "Contact page"
       emphasized: "Ruby on Rails Tutorial"
   users:
+    show_follow:
+      row: "row"
+      col_4: "col-md-4"
+      info: "user_info"
+      view: "view my profile"
+      stats: "stats"
+      avatar: "user_avatars"
+      col_8: "col-md-8"
+      follow: "users follow"
+    unfollow:
+      u_follow: "Unfollow"
+    follow_form:
+      f_form: "follow_form"
+    follow:
+      follow: "Follow"
     user:
       delete: "delete"
       text: "You sure?"
@@ -146,6 +167,12 @@ en:
       col_8: "col-md-8"
       headding: "Microposts"
       class: "microposts"
+      stats: "stats"
+    stats:
+      stats: "stats"
+      stat: "stat"
+      following: "following"
+      followers: "followers"
     edit:
       edit: "Edit user"
       save: "Save changes"
@@ -161,6 +188,11 @@ en:
       all: "All users"
       class: "users"
   shared:
+    stats:
+      stats: "stats"
+      stat: "stat"
+      following: "following"
+      followers: "followers"
     error_messages:
       id: "error_explanation"
       class: "alert  alert-danger"
@@ -168,7 +200,7 @@ en:
       error: "error"
     feed:
       class: "microposts"
-    micropost:
+    micropost_form:
       field: "field"
       placeholder: "Compose new micropost..."
       post: "Post"
@@ -193,7 +225,6 @@ your account:"
       active: "Activate"
     password_reset:
       heading: "Password reset"
-
       to_reset: "To reset your password click the link below:"
       exprie: "This link will expire in two hours."
       reset: "If you did not request your password to be reset, please ignore
